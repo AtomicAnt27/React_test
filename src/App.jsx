@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/Card'
+import Ditto from "./assets/images/Ditto.gif"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Bah guri</h1>
+      <Card
+        title="Ditto"
+        image={Ditto}
+        text1="Mt foda"
+      />
     </>
   )
 }
