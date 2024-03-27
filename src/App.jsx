@@ -3,6 +3,7 @@ import style from './App.module.css'
 import { Tilt } from 'react-tilt'
 
 import Card from "./components/Card"
+import Menu from "./components/Menu"
 import Ditto from "./assets/images/ditto.gif"
 
 function App() {
@@ -20,9 +21,13 @@ function App() {
   }
 
   return (
-    <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
-      <Card title="Ditto" image={Ditto} text1="Mt foda" />
-    </Tilt>
+    <>
+      <Menu/>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+        <Card title="Ditto" image={Ditto} text1="Mt foda" />
+      </Tilt>
+    </>
   )
 }
 
